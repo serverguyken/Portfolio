@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <title>Kehinde Akinsanya | Portfolio</title>
+</head>
+
+<body>
+  <header class="header-nav">
+    <div class="nav-main bg-white fixed top-0 left-0 right-0 z-50 space-main">
+      <div class="nav-logo">
+       <a href="#home" class="links main active">Kehinde Akinsanya</a>
+      </div>
+      <ul class="nav-links">
+        <div class="links-flex flex">
+          <ul>
+            <li class="nav-link ml-3"><a href="#projects" class="links projects">Projects</a></li>
+            <li class="nav-link"><a href="#about" class="links about">About</a></li>
+          </ul>
+        </div>
+        <div class="links-flex ml-10">
+          <li class="btn-contact"><a href="#contact">Get in touch</a>
+          </li>
+        </div>
+      </ul>
+    </div>
+    <div class="nav-mobile bg-white fixed top-0 z-50 w-full">
+      <div class="nav-mobile-header">
+        <div class="nav-mb-logo">
+          <h2> <a href="#home" class="links home">Kehinde Akinsanya</a></h2>
+        </div>
+        <div class="nav-mb-icon">
+          <button class="nav-btn nav-open show" onclick="openMobileMenu()">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+          <button class="nav-btn nav-close show" onclick="closeMobileMenu()">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-6">
+              <path fill-rule="evenodd"
+                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                clip-rule="evenodd" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="space-main nav-mobile-con bg-gray-100 fixed right-0 z-50 h-screen w-44 hide" id="mbNavContents">
+        <ul class="nav-mob-links">
+          <li><a href="#projects" class="links projects">Projects</a></li>
+          <li><a href="#about" class="links about">About</a></li>
+          <li><a href="#contact" class="links contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+
+
+    <section id="home" class="home pt-48">
+      <h3>Hello i'm <span class="span-name">Kehinde Akinsanya</span></h3>
+      <h2 class="mb-5">I’m a full stack <span>web developer.</span></h2>
+      <a class="w-40 px-3  bg-main  py-3 rounded-sm  text-white no-underline hover:no-underline  cursor-pointer"
+        href="#projects">
+        View Projects</a>
+    </section>
+
+
+    
+    <section id="projects">
+      <h1 class="text-center text-4xl mb-10">Projects</h1>
+      <div>
+        <div class="cards flex">
+          <div class="card cursor-pointer relative bg-whiet w-60 h-60 animate-color shadow-sm">
+            <div class="img">
+              <img class="w-40 block ml-auto mr-auto mt-4 mb-4"
+                src="https://res.cloudinary.com/serveryguken/image/upload/v1605835848/Mosregal-Website/assets/imgs/png%20icons/logo-firebrick_meqvne.png"
+                alt="mosregal" />
+            </div>
+            <div class="card-desc animate-card-overlay absolute top-0 w-full h-full overlay bg-gray-200">
+              <div class="text-white pl-2 absolute bottom-4">
+                <a href="https://mosregal.com" class="text-lg text-black  no-underline">MosRegal</a>
+                <p class="mt-2 mb-1">Online food delivery restaurant</p>
+                <p class=" text-sm">HTML. CSS. JS</p>
+              </div>
+            </div>
+          </div>
+          <div class="card relative cursor-pointer bg-whiet w-60 h-60 animate-color shadow-sm">
+            <div class="img">
+              <img class="w-40 block ml-auto mr-auto mt-20 mb-20"
+                src="https://res.cloudinary.com/serveryguken/image/upload/v1612386754/Projects/logsnap/logo/LogSnap-main_xppj6x.svg"
+                alt="logsnap" />
+            </div>
+            <div class="card-desc animate-card-overlay absolute top-0 w-full h-full overlay bg-gray-200">
+              <div class="text-white pl-2 absolute bottom-4">
+                <a href="https://lognsnap.app" class="text-lg text-black  no-underline">LogSnap</a>
+                <p class="mt-2 mb-1">Simple issue tracking tool.</p>
+                <p class=" text-sm">VueJS. Firebase. Nodejs. Netlify</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="about" class="container">
+      <h1 class="text-center text-4xl mb-10">About</h1>
+      <h4 class="text-main text-2xl">Who I Am</h4>
+      <p class="text-gray-600 mt-2 text-lg">I'm Kehinde Akinsanya also known as serverguyken, a full stack web developer,
+        skilled problem-solver. I love building user-friendly websites and web apps. Enjoy building solutions that help
+        companies reach their goal. I also love playing soccer and making music in my spare time.
+      </p>
+      <p class="text-gray-600 mt-4 text-lg">I'm always interested in learning new things, so feel free to reach out <a class="text-main"
+          href="mailto:serverguyken@gmail.com?subject=Let's talk">severguyken@gmail.com</a></p>
+    </section>
+
+    
+    <section id="contact">
+      <h1 class="text-center text-4xl">Contact</h1>
+      <div class="contact-form  pb-20">
+        <div class="w-10/12 max-w-md block ml-auto mr-auto bg-white p-3 rounded-sm">
+          <form name="contact" method="POST" action="https://submit-form.com/bD0zeOTq">
+            <div class="form-name mt-4">
+              <label for="name" class="w-full block">Name</label>
+              <input type="text" name="Name" id="name" placeholder="Your name"
+                class="w-80 bg-white border p-1 rounded-sm focus:outline-none focus:ring-1 focus:ring-blue-300 mt-2" required />
+            </div>
+            <div class="form-email mt-4">
+              <label for="email" class="w-full block">Email</label>
+              <input type="email" id="email" placeholder="Your email" name="Email"
+                class="w-80 bg-white border p-1 rounded-sm focus:outline-none focus:ring-1 focus:ring-blue-300 mt-2" required />
+            </div>
+            <div class="form-message mt-4">
+              <label for="message" class="w-full block">Message</label>
+              <textarea type="text" name="Message" id="message"  placeholder="Message"
+                class="w-80 h-32 max-h-44 resize-none bg-white border  rounded-sm focus:outline-none focus:ring-1 focus:ring-blue-300 mt-2" required>
+                </textarea>
+            </div>
+            <div class="mt-2">
+              <button type="submit" class="bg-main submitBtn p-2 rounded">Send Message</button>
+            </div>
+          </form>
+          <p class="success-message text-green-500 mt-4 hide">Message sent successfully!</p>
+        </div>
+        <div class="social-links border-t  w-full p-2 mt-4 space-main container">
+          <h3 class="text-3xl mt-4 -mb-1">See what i'm up to</h3>
+          <p class="mb-4">Follow my online presence on Twitter, Linkedin and Github</p>
+          <div class="links flex">
+            <button class="twitter-link">
+              <img src="https://res.cloudinary.com/serveryguken/image/upload/v1613408576/Portfolio/twitter_u0rhdo.svg"
+                alt="twitter" class="w-4" />
+              <a class="ml-2" href="https://twitter.com/serverguyken">TWITTER</a>
+            </button>
+            <button class="linkedin-link ml-2">
+              <img src="https://res.cloudinary.com/serveryguken/image/upload/v1613408733/Portfolio/linkedin_r0wh2t.svg"
+                alt="twitter" class="w-4" />
+              <a class="ml-2" href="https://www.linkedin.com/in/kehinde-serverguyken/">LINKEDIN</a>
+            </button>
+            <button class="github-link ml-2">
+              <img
+                src="https://res.cloudinary.com/serveryguken/image/upload/v1613408721/Portfolio/github-logo_qudkk8.svg"
+                alt="twitter" class="w-4" />
+              <a class="ml-2" href="https://github.com/serverguyken">GITHUB</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+  <script src="main.js"></script>
+</body>
+
+</html>
