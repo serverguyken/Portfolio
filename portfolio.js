@@ -16,9 +16,9 @@ toggleHide.addEventListener('click', (e) => {
     mbNavContents.classList.remove('slide_down');
     mbNavContents.classList.add('slide_up');
     setTimeout(() => {
-         mbNavContents.classList.remove('show');
-         mbNavContents.classList.add('hide');
-    }, 800);
+        mbNavContents.classList.remove('show');
+        mbNavContents.classList.add('hide');
+    }, 280);
     toggleHide.style.display = "none";
     toggleShow.style.display = "block";
 });
@@ -28,13 +28,13 @@ function getQueryString(field, url) {
     const reg = new RegExp("[?&]" + field + "=([^&#]*)", "i");
     const string = reg.exec(href);
     return string ? string[1] : null;
-  }
-  const URL = location.hash.split('#')[1];
+}
+const URL = location.hash.split('#')[1];
 
 
 
-  const navLinks = document.querySelectorAll('.nav-link');
-  navLinks.forEach(link => {
+const navLinks = document.querySelectorAll('.nav-link');
+navLinks.forEach(link => {
     link.addEventListener('click', e => {
         const section = link.children[0];
         navLinks.forEach(link => {
@@ -44,18 +44,11 @@ function getQueryString(field, url) {
         link.classList.add("active");
         link.children[0].style.color = "#248df0";
     })
- });
+});
 
 
- window.onload =  function () {
-     location.hash=''
- };
-
- const headerNav = document.querySelector('.header-nav');
- console.log(headerNav);
-
- window.onscroll = function () {
-    headerNav.classList.add('nav-scrolled');
- }
+window.onload = function () {
+    location.hash = ''
+};
 
  
