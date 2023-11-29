@@ -569,13 +569,13 @@ body {
     grid-gap: 10px;
 }
 
-@media screen and (max-width: 600px) {
+@media (max-width: 600px) {
     .skills_list {
         grid-template-columns: repeat(3, 1fr);
     }
 }
 
-@media screen and (max-width: 500px) {
+@media (max-width: 500px) {
     .skills_list {
         grid-template-columns: repeat(2, 1fr) !important;
     }
